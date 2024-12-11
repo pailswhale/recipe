@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edible Recipes - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff; 
+        }
+        
+        .header {
+            background-color: #ff8c00; 
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+            margin-right: 5px;
+        }
+        .search-button {
+            padding: 8px 15px;
+            border: none;
+            background-color: #1e90ff; 
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .search-button:hover {
+            background-color: #4682b4; 
+        }
+        
+        .sidebar {
+            width: 200px;
+            background-color: #1e90ff; 
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 60px; 
+            height: calc(100% - 60px);
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #ff8c00; 
+        }
+        /* Main content */
+        .main-content {
+            margin-left: 220px; 
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            color: #ff8c00; 
+        }
+        .main-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .main-content ul li {
+            margin: 10px 0;
+        }
+        .main-content ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .main-content ul li a:hover {
+            color: #ff8c00;
+        }
+        /* Teaser Section for Strawberry Lemonade */
+        .teaser {
+            display: flex;
+            background-color: #d3d3d3; 
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .teaser img {
+            max-width: 25%;
+            border-radius: 10px;
+        }
+        .teaser-text {
+            margin-left: 20px;
+            max-width: 55%;
+        }
+        .teaser-text h3 {
+            color: #ff8c00;
+        }
+        .teaser-text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .teaser-text a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .teaser-text a:hover {
+            color: #ff8c00;
+        }
+        /* Search results section */
+        #recipe-list {
+            margin-top: 20px;
+        }
+        .recipe {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .recipe:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with title and search bar -->
+    <div class="header">
+        <h1>Edible Recipes</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search recipes..." class="search-bar">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <a href="beverages.html">Beverages</a>
+        <a href="entrees.html">Entrées</a>
+        <a href="appetizers.html">Appetizers</a>
+        <a href="desserts.html">Desserts</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h2>Welcome to Edible Recipes!</h2>
+        <p>Explore our collection of delicious recipes.</p>
+
+        <!-- Search results section -->
+        <div id="recipe-list"></div>
+
+        <!-- Teaser Section for Strawberry Lemonade -->
+        <div class="teaser">
+            <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2019/03/Strawberry-Lemonade-8.jpg" alt="Strawberry Lemonade">
+            <div class="teaser-text">
+                <h3>Refreshing Strawberry Lemonade</h3>
+                <p>Enjoy the perfect blend of sweet and tart with our homemade strawberry lemonade recipe. It's the ideal drink to keep you refreshed on a warm day!</p>
+                <a href="strawberry_lemonade.html">Read the full recipe</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eexternal search.js file -->
+    <script src="search.js"></script>
+</body>
+</html>
