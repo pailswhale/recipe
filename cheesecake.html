@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesecake - Edible Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff; 
+        }
+        /* Header with title */
+        .header {
+            background-color: #ff8c00; 
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #1e90ff; 
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 60px; 
+            height: calc(100% - 60px);
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #ff8c00; 
+        }
+        /* Main content */
+        .main-content {
+            margin-left: 220px; 
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            color: #ff8c00; 
+        }
+        .main-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .main-content ul li {
+            margin: 10px 0;
+        }
+        .main-content ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .main-content ul li a:hover {
+            color: #ff8c00;
+        }
+        /* Recipe section */
+        .recipe-section {
+            display: flex;
+            background-color: #f0f8ff; 
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .recipe-section img {
+            max-width: 50%; 
+            border-radius: 10px;
+            object-fit: contain; 
+        }
+        .recipe-text {
+            margin-left: 20px;
+            max-width: 70%;
+        }
+        .recipe-text h3 {
+            color: #ff8c00;
+        }
+        .recipe-text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        /* Ingredients Section */
+        .ingredients, .instructions {
+            background-color: #d3d3d3; 
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .ingredients h4, .instructions h4 {
+            color: #ff8c00;
+        }
+        .ingredients ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredients li {
+            font-size: 16px;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body data-keywords="cheesecake, dessert, creamy, vanilla, cake">
+
+    <!-- Header with title -->
+    <div class="header">
+        <h1>Edible Recipes</h1>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <a href="beverages.html">Beverages</a>
+        <a href="entrees.html">Entrées</a>
+        <a href="appetizers.html">Appetizers</a>
+        <a href="desserts.html">Desserts</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h2>Cheesecake Recipe</h2>
+
+        <!-- Recipe Section for Cheesecake -->
+        <div class="recipe-section">
+            <img src="https://simplyscrumptiouseats.com/wp-content/uploads/2021/11/philadelphia-cheesecake-tall-2.jpg" alt="Cheesecake">
+            <div class="recipe-text">
+                <h3>Classic Cheesecake</h3>
+                <p>This creamy and decadent cheesecake with a buttery graham cracker crust is the ultimate dessert for any occasion. Enjoy a slice of heaven!</p>
+
+                <!-- Ingredients Section -->
+                <div class="ingredients">
+                    <h4>Ingredients (Serves 10)</h4>
+                    <ul>
+                        <li>1 1/2 cups graham cracker crumbs</li>
+                        <li>1/4 cup sugar</li>
+                        <li>1/2 cup melted butter</li>
+                        <li>3 (8 oz) packages cream cheese, softened</li>
+                        <li>1 cup granulated sugar</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>3 large eggs</li>
+                        <li>1/4 cup sour cream</li>
+                        <li>1/4 cup heavy cream</li>
+                    </ul>
+                </div>
+
+                <!-- Instructions Section -->
+                <div class="instructions">
+                    <h4>Instructions</h4>
+                    <ol>
+                        <li>Preheat your oven to 325°F (163°C). Grease a 9-inch springform pan with butter and set aside.</li>
+                        <li>In a medium bowl, combine the graham cracker crumbs, sugar, and melted butter. Press the mixture into the bottom of the prepared pan to form the crust.</li>
+                        <li>Bake the crust for 8-10 minutes, then remove from the oven and let cool.</li>
+                        <li>In a large mixing bowl, beat the cream cheese with an electric mixer until smooth and creamy. Add the sugar and vanilla extract, and mix until well combined.</li>
+                        <li>Beat in the eggs, one at a time, making sure to incorporate each egg before adding the next.</li>
+                        <li>Add the sour cream and heavy cream, and mix until smooth.</li>
+                        <li>Pour the cheesecake batter over the cooled crust, smoothing the top with a spatula.</li>
+                        <li>Bake for 55-60 minutes or until the center is set and only slightly jiggles when you move the pan.</li>
+                        <li>Turn off the oven and let the cheesecake cool in the oven for 1 hour. Afterward, remove from the oven and let cool completely at room temperature.</li>
+                        <li>Refrigerate for at least 4 hours or overnight for best results before serving.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

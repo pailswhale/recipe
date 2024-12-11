@@ -1,0 +1,26 @@
+#recipe-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipe {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px; 
+    color: black; 
+    transition: background-color 0.3s;
+}
+
+.recipe:hover {
+    background-color: #f0f8ff; 
+}
+
+.recipe h2 {
+    font-size: 16px; 
+    margin: 0;
+}

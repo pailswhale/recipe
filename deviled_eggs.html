@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deviled Eggs - Edible Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff; 
+        }
+        /* Header */
+        .header {
+            background-color: #ff8c00; 
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        /* Sidebar styling */
+        .sidebar {
+            width: 200px;
+            background-color: #1e90ff; 
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 60px; 
+            height: calc(100% - 60px);
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #ff8c00; 
+        }
+        /* Main content styling */
+        .main-content {
+            margin-left: 220px; 
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            color: #ff8c00; 
+        }
+        .main-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .main-content ul li {
+            margin: 10px 0;
+        }
+        .main-content ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .main-content ul li a:hover {
+            color: #ff8c00;
+        }
+        /* Recipe section */
+        .recipe-section {
+            display: flex;
+            background-color: #f0f8ff; 
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .recipe-section img {
+            max-width: 45%; 
+            border-radius: 10px;
+            object-fit: contain; 
+        }
+        .recipe-text {
+            margin-left: 20px;
+            max-width: 70%;
+        }
+        .recipe-text h3 {
+            color: #ff8c00;
+        }
+        .recipe-text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        /* Ingredients Section */
+        .ingredients, .instructions {
+            background-color: #d3d3d3; 
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .ingredients h4, .instructions h4 {
+            color: #ff8c00;
+        }
+        .ingredients ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredients li {
+            font-size: 16px;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body data-keywords="deviled eggs, appetizer, eggs, creamy, mustard">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Edible Recipes</h1>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <a href="beverages.html">Beverages</a>
+        <a href="entrees.html">Entrées</a>
+        <a href="appetizers.html">Appetizers</a>
+        <a href="desserts.html">Desserts</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h2>Deviled Eggs Recipe</h2>
+
+        <!-- Recipe Section for Deviled Eggs -->
+        <div class="recipe-section">
+            <img src="https://www.paleorunningmomma.com/wp-content/uploads/2015/06/bacon-deviled-eggs-6.jpg" alt="Deviled Eggs">
+            <div class="recipe-text">
+                <h3>Bacon Deviled Eggs</h3>
+                <p>These deviled eggs are topped with crispy bacon and a creamy filling, perfect for any appetizer or party dish.</p>
+
+                <!-- Ingredients Section -->
+                <div class="ingredients">
+                    <h4>Ingredients (Makes 12 servings)</h4>
+                    <ul>
+                        <li>6 large eggs</li>
+                        <li>3 tablespoons mayonnaise</li>
+                        <li>1 teaspoon Dijon mustard</li>
+                        <li>1 teaspoon apple cider vinegar</li>
+                        <li>Salt and pepper to taste</li>
+                        <li>4 slices bacon, cooked and crumbled</li>
+                        <li>Fresh chives, for garnish (optional)</li>
+                    </ul>
+                </div>
+
+                <!-- Instructions Section -->
+                <div class="instructions">
+                    <h4>Instructions</h4>
+                    <ol>
+                        <li>Place the eggs in a saucepan and cover them with water. Bring to a boil over high heat. Once boiling, remove from heat, cover, and let sit for 10-12 minutes.</li>
+                        <li>Remove the eggs, let them cool in ice water, then peel and cut them in half lengthwise.</li>
+                        <li>Remove the yolks and place them in a bowl. Mash the yolks with mayonnaise, Dijon mustard, apple cider vinegar, salt, and pepper.</li>
+                        <li>Carefully spoon or pipe the yolk mixture back into the egg whites.</li>
+                        <li>Top each deviled egg with crumbled bacon and garnish with chives if desired.</li>
+                        <li>Serve chilled and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

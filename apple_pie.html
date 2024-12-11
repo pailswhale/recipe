@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Pie - Edible Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff; 
+        }
+
+        .header {
+            background-color: #ff8c00; 
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #1e90ff; 
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 60px; 
+            height: calc(100% - 60px);
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #ff8c00; 
+        }
+        /* Main content */
+        .main-content {
+            margin-left: 220px; 
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            color: #ff8c00; 
+        }
+        /* Recipe section */
+        .recipe-section {
+            display: flex;
+            background-color: #f0f8ff; 
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .recipe-section img {
+            max-width: 50%; 
+            border-radius: 10px;
+            object-fit: contain; 
+        }
+        .recipe-text {
+            margin-left: 20px;
+            max-width: 70%;
+        }
+        .recipe-text h3 {
+            color: #ff8c00;
+        }
+        .recipe-text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .ingredients, .instructions {
+            background-color: #d3d3d3; 
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .ingredients h4, .instructions h4 {
+            color: #ff8c00;
+        }
+    </style>
+</head>
+<body data-keywords="apple, pie, dessert, cinnamon, flaky crust">
+
+    <!-- Header with title -->
+    <div class="header">
+        <h1>Edible Recipes</h1>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <a href="beverages.html">Beverages</a>
+        <a href="entrees.html">Entrées</a>
+        <a href="appetizers.html">Appetizers</a>
+        <a href="desserts.html">Desserts</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h2>Apple Pie Recipe</h2>
+
+        <!-- Recipe Section -->
+        <div class="recipe-section">
+            <img src="https://krollskorner.com/wp-content/uploads/2019/11/ApplePie_-29-scaled.jpg" alt="Apple Pie">
+            <div class="recipe-text">
+                <h3>Classic Apple Pie</h3>
+                <p>This homemade apple pie features a flaky, buttery crust filled with tender apples and a blend of warm spices, making it a perfect treat for any occasion.</p>
+
+                <!-- Ingredients Section -->
+                <div class="ingredients">
+                    <h4>Ingredients (Serves 8)</h4>
+                    <ul>
+                        <li>2 1/2 cups all-purpose flour</li>
+                        <li>1 cup unsalted butter, chilled and cubed</li>
+                        <li>1/4 cup ice water</li>
+                        <li>1/4 teaspoon salt</li>
+                        <li>5 cups peeled and sliced apples (Granny Smith or Honeycrisp)</li>
+                        <li>3/4 cup granulated sugar</li>
+                        <li>1/4 cup packed brown sugar</li>
+                        <li>1 tablespoon lemon juice</li>
+                        <li>2 teaspoons ground cinnamon</li>
+                        <li>1/4 teaspoon ground nutmeg</li>
+                        <li>1 tablespoon cornstarch</li>
+                        <li>1 tablespoon butter, cut into small pieces</li>
+                        <li>1 egg, beaten (for egg wash)</li>
+                    </ul>
+                </div>
+
+                <!-- Instructions Section -->
+                <div class="instructions">
+                    <h4>Instructions</h4>
+                    <ol>
+                        <li>Preheat your oven to 375°F (190°C). Set aside a 9-inch pie dish.</li>
+                        <li>In a large bowl, combine the flour and salt. Add the cubed butter and cut it in using a pastry cutter or fork until the mixture resembles coarse crumbs.</li>
+                        <li>Add ice water, one tablespoon at a time, until the dough comes together. Split the dough into two equal portions, wrap them in plastic wrap, and chill for 30 minutes.</li>
+                        <li>Meanwhile, prepare the filling. In a large bowl, combine the apples, granulated sugar, brown sugar, lemon juice, cinnamon, nutmeg, and cornstarch. Toss until the apples are evenly coated.</li>
+                        <li>Roll out one portion of dough and place it into the pie dish. Add the apple filling into the crust, spreading it evenly. Dot the filling with pieces of butter.</li>
+                        <li>Roll out the second portion of dough and place it over the apples. Trim any excess dough and crimp the edges to seal the pie. Cut small slits in the top crust to allow steam to escape.</li>
+                        <li>Brush the top crust with the beaten egg for a golden finish.</li>
+                        <li>Bake the pie in the preheated oven for 45-50 minutes, or until the crust is golden brown and the filling is bubbling. If the crust starts to brown too quickly, cover the edges with foil.</li>
+                        <li>Remove the pie from the oven and let it cool for at least 2 hours before slicing and serving.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

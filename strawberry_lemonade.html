@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberry Lemonade - Edible Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f8ff; 
+        }
+        /* Header with title */
+        .header {
+            background-color: #ff8c00; 
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        /* Sidebar styling */
+        .sidebar {
+            width: 200px;
+            background-color: #1e90ff; 
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 60px; 
+            height: calc(100% - 60px);
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #ff8c00; 
+        }
+        /* Main content styling */
+        .main-content {
+            margin-left: 220px; 
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-content h2 {
+            color: #ff8c00; 
+        }
+        .main-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .main-content ul li {
+            margin: 10px 0;
+        }
+        .main-content ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .main-content ul li a:hover {
+            color: #ff8c00;
+        }
+        /* Sections for ingredients and instructions */
+        .section {
+            background-color: #d3d3d3; 
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            width: 60%;
+        }
+        .section h3 {
+            margin-top: 0;
+            color: #ff8c00;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .section ul li {
+            margin: 10px 0;
+        }
+        .section ol {
+            padding-left: 20px;
+        }
+        /* Styling for the image */
+        .image-container {
+            width: 35%;
+            padding: 20px;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body data-keywords="strawberry, lemonade, refreshing, summer, citrus">
+
+    <!-- Header with title -->
+    <div class="header">
+        <h1>Edible Recipes</h1>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <a href="beverages.html">Beverages</a>
+        <a href="entrees.html">Entrées</a>
+        <a href="appetizers.html">Appetizers</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Recipe details on the left -->
+        <div class="recipe-details">
+            <h2>Strawberry Lemonade</h2>
+            <p>Refresh yourself with this sweet and tangy strawberry lemonade. Perfect for a summer day!</p>
+
+            <!-- Ingredients Section -->
+            <div class="section">
+                <h3>Ingredients (Serves 4)</h3>
+                <ul>
+                    <li>1 cup fresh strawberries, hulled</li>
+                    <li>1 cup freshly squeezed lemon juice (about 4 lemons)</li>
+                    <li>1/2 cup granulated sugar (adjust to taste)</li>
+                    <li>4 cups cold water</li>
+                    <li>Ice cubes</li>
+                    <li>Optional: Fresh mint leaves for garnish</li>
+                </ul>
+            </div>
+
+            <!-- Instructions Section -->
+            <div class="section">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>In a blender, combine the strawberries, lemon juice, and sugar. Blend until smooth.</li>
+                    <li>Pour the strawberry mixture into a large pitcher and add the cold water. Stir to combine.</li>
+                    <li>Fill glasses with ice cubes and pour the strawberry lemonade over the ice.</li>
+                    <li>Garnish with fresh mint leaves if desired and serve chilled.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Image on the right -->
+        <div class="image-container">
+            <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2019/03/Strawberry-Lemonade-8.jpg" alt="Strawberry Lemonade">
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virgin Mojito - Edible Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff; 
+        }
+        /* Header */
+        .header {
+            background-color: #ff8c00; 
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #1e90ff; 
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 60px; 
+            height: calc(100% - 60px);
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #ff8c00; 
+        }
+        /* Main content */
+        .main-content {
+            margin-left: 220px; 
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            color: #ff8c00; 
+        }
+        .main-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .main-content ul li {
+            margin: 10px 0;
+        }
+        .main-content ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .main-content ul li a:hover {
+            color: #ff8c00;
+        }
+        /* Recipe section */
+        .recipe-section {
+            display: flex;
+            background-color: #f0f8ff; 
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .recipe-section img {
+            max-width: 45%; 
+            border-radius: 10px;
+            object-fit: contain; 
+        }
+        .recipe-text {
+            margin-left: 20px;
+            max-width: 70%;
+        }
+        .recipe-text h3 {
+            color: #ff8c00;
+        }
+        .recipe-text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        /* Ingredients Section */
+        .ingredients, .instructions {
+            background-color: #d3d3d3; 
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .ingredients h4, .instructions h4 {
+            color: #ff8c00;
+        }
+        .ingredients ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredients li {
+            font-size: 16px;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body data-keywords="virgin mojito, beverage, mint, lime, refreshing">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Edible Recipes</h1>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <a href="beverages.html">Beverages</a>
+        <a href="entrees.html">Entrées</a>
+        <a href="appetizers.html">Appetizers</a>
+        <a href="desserts.html">Desserts</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h2>Virgin Mojito Recipe</h2>
+
+        <!-- Recipe Section for Virgin Mojito -->
+        <div class="recipe-section">
+            <img src="https://www.sustainablecooks.com/wp-content/uploads/2018/06/Classic-Virgin-Mojito-Recipe-2.jpg" alt="Virgin Mojito">
+            <div class="recipe-text">
+                <h3>Refreshing Virgin Mojito</h3>
+                <p>A virgin mojito is a classic non-alcoholic beverage made with fresh mint, lime, and soda water. It's a perfect drink to keep you cool and refreshed!</p>
+
+                <!-- Ingredients Section -->
+                <div class="ingredients">
+                    <h4>Ingredients (Serves 2)</h4>
+                    <ul>
+                        <li>10-12 fresh mint leaves</li>
+                        <li>2 tbsp fresh lime juice</li>
+                        <li>2 tsp sugar</li>
+                        <li>Ice cubes</li>
+                        <li>Club soda (or sparkling water)</li>
+                        <li>Lime slices, for garnish</li>
+                        <li>Mint sprigs, for garnish</li>
+                    </ul>
+                </div>
+
+                <!-- Instructions Section -->
+                <div class="instructions">
+                    <h4>Instructions</h4>
+                    <ol>
+                        <li>In a glass, add the mint leaves and sugar.</li>
+                        <li>Using a muddler or the back of a spoon, gently crush the mint leaves to release the oils.</li>
+                        <li>Pour in the lime juice and stir to combine.</li>
+                        <li>Add ice cubes to fill the glass halfway.</li>
+                        <li>Top off the drink with club soda and stir again.</li>
+                        <li>Garnish with a lime slice and a mint sprig.</li>
+                        <li>Serve immediately and enjoy your refreshing virgin mojito!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
