@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages - Edible Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f8ff; 
+        }
+        /* Header with title and search bar */
+        .header {
+            background-color: #ff8c00; 
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+            margin-right: 5px;
+        }
+        .search-button {
+            padding: 8px 15px;
+            border: none;
+            background-color: #1e90ff; 
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .search-button:hover {
+            background-color: #4682b4; 
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #1e90ff; 
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 60px; 
+            height: calc(100% - 60px);
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #ff8c00; 
+        }
+        /* Main content */
+        .main-content {
+            margin-left: 220px; 
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            color: #ff8c00; 
+        }
+        .main-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .main-content ul li {
+            margin: 10px 0;
+        }
+        .main-content ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .main-content ul li a:hover {
+            color: #ff8c00;
+        }
+        /* Search results section */
+        #recipe-list {
+            margin-top: 20px;
+        }
+        .recipe {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .recipe:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with title and search bar -->
+    <div class="header">
+        <h1>Edible Recipes - Beverages</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search beverages..." class="search-bar">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="beverages.html">Beverages</a>
+        <a href="entrees.html">Entrées</a>
+        <a href="appetizers.html">Appetizers</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="index.html">Home</a> 
+    </div>
+
+    <div class="main-content">
+        <h2>Our Beverages</h2>
+        <p>Explore a variety of refreshing and flavorful beverages to enjoy.</p>
+        <ul>
+            <li><a href="strawberry_lemonade.html">Strawberry Lemonade</a></li>
+            <li><a href="virgin_mojito.html">Virgin Mojito</a></li>
+            <li><a href="cucumber_mint_cooler.html">Cucumber Mint Cooler</a></li>
+        </ul>
+
+        <!-- Search results section -->
+        <div id="recipe-list"></div>
+    </div>
+    
+    <!-- external search.js file -->
+    <script src="search.js"></script>
+</body>
+</html>
